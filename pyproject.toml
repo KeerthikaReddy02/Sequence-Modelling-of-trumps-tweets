@@ -1,0 +1,28 @@
+[project]
+name = "dl-seq-modeling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Keerthika Reddy", email = "keerthi.pie.2002@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "tensorboard>=2.21.0",
+    "torch>=2.15.0",
+    "torchaudio>=2.11.1",
+    "torchvision>=0.29.2",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+dl-seq-modeling = "dl_seq_modeling:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
